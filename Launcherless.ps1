@@ -1,4 +1,4 @@
-﻿$info =  Get-WmiObject Win32_Process -Filter "name = 'EliteDangerous32.exe'"
+$info =  Get-WmiObject Win32_Process -Filter "name like 'EliteDangerous%.exe'"
 
 $path = $info.Path
 
